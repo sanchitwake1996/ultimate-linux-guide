@@ -64,6 +64,14 @@
 - `:/<WORD>` - highlight the word
 - `:nohl` - remove highlights
 
+---
+
+### Visualise mode:
+- `v` - slect character
+- `V` - select lines
+- `ctrl+v` - select block
+
+---
 
 ### Search and Replace
 - `/pattern` – Search **forward** for a pattern  

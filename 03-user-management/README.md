@@ -86,10 +86,17 @@ userdel -r username
 groupadd groupname
 ```
 
+### Assign Password to Group
+```bash
+gpasswd groupname
+```
+
 ### Adding Users to Groups
 ```bash
 usermod -aG groupname username
+gpasswd -a username groupname 
 ```
+
 
 ### Viewing Group Memberships
 ```bash

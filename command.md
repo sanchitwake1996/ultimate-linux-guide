@@ -31,3 +31,15 @@
 - `cal MONTH YEAR` - calendar of perticulcar month and year
 - `cal -3` - show calendar of current month, next month, and previous month
 - `cal -j` - julian calendar
+---
+
+### To Turnoff
+
+- `shutdown` - to turnoff your computer after 1 min
+- `shutdown now` - to turnoff you system immediately
+- `poweroff` - to turnoff your system immediately
+- `init 0` - to turnoff the system
+- `logout` - logout from existing user
+- `exit` - exit from existing user
+- `reboot` - to restart the system
+- `init 6` - to reboot the system

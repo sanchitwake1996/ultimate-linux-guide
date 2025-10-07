@@ -140,20 +140,25 @@ Then add:
 ```bash
 username ALL=(ALL) NOPASSWD: /path/to/command
 ```
+---
 
 ### /etc/passwd - 7 fields
 1. username
 2. x - linked to password
-3. uid
-4. gid
-5. comment
-6. home dir
-7. shell type (sh, zsh, bash)
+3. uid `-u`
+4. gid `-g`
+5. comment `-c`
+6. home dir `-m -d`
+7. shell type (sh, zsh, bash) `-s`
 
-- ```bash
+To add user with specific UID, GID, comment, directory and shell
+```bash
 useradd -u <UID> -g <GID> -G <GID> -c <COMMENT> -m -d /home/mindblowing -s /sbin/nologin shubham
 ```
-- ```bash
+`-G` - to add user to group
+
+To Modify user GID UID Comment 
+```bash
 usermod -u -o <UID> -g <GID> -G <GID> -c <COMMENT> -d /home/demo -s /bin/bash shubham
 ```
 - `usermod -L user` - to lock the user

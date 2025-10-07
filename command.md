@@ -1,5 +1,8 @@
 # Linux Commands
 
+- `$` - local user
+- `#` - super user (root user UID 0)
+  
 ### Terminal Information
 
 - `hostname` - machine name 

@@ -51,6 +51,20 @@
 
 ---
 
+### Execute mode (:)
+- `esc` ->
+- `:w` - save
+- `:q` - quit
+- `:wq` - save and quit
+- `:w!` - save forcefully
+- `:q!` - quit forcefully - even if file is not created
+- `:wq!` - save and quit forcefully
+- `: set nu` - set numbers to the lines
+- `: set nonu` - remove numbers from lines
+- `:/<WORD>` - highlight the word
+- `:nohl` - remove highlights
+
+
 ### Search and Replace
 - `/pattern` – Search **forward** for a pattern  
 - `?pattern` – Search **backward** for a pattern  

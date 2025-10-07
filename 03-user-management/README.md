@@ -145,11 +145,11 @@ username ALL=(ALL) NOPASSWD: /path/to/command
 ### /etc/passwd - 7 fields
 1. username
 2. x - linked to password
-3. uid `-u`
-4. gid `-g`
-5. comment `-c`
-6. home dir `-m -d`
-7. shell type (sh, zsh, bash) `-s`
+3. uid **`-u`**
+4. gid **`-g`**
+5. comment **`-c`**
+6. home dir **`-m -d`**
+7. shell type (sh, zsh, bash) **`-s`**
 
 To add user with specific UID, GID, comment, directory and shell
 ```bash
@@ -164,4 +164,35 @@ usermod -u -o <UID> -g <GID> -G <GID> -c <COMMENT> -d /home/demo -s /bin/bash sh
 - `usermod -L user` - to lock the user
 - `usermod -U user` - to unlock user
 
+
+### /etc/shadow - 9 fields
+1. username - **`usermod, useradd`**
+2. encrypted password - **`passwd`**
+3. days count from 1 jan 1970 till last password changed - **`chage -d`**
+4. min. days to change password - **`chage -m`**
+5. max days to change password - **`chage -M`**
+6. warning days - **`chage -W`**
+7. Pasword Inactive - **`chage -I`**
+8. Date of Account - **`chage -E`**
+9. Future use
+
+For forcefully change the password for first time login
+**`chage -d 0 -m 0 -M 0 user`**
+
+
+### /etc/group - group details
+1. groupname
+2. X - Linked to group password
+3. gid - group id
+4. user list -
+
+
+### /etc/shadow - group password
+1. groupname
+2. encrupted group password
+3. Admin of the group
+4. user list -
+
+- To make the admin of group
+  `gpasswd -M username groupname`
 

@@ -94,7 +94,19 @@ gpasswd groupname
 ### Adding Users to Groups
 ```bash
 usermod -aG groupname username
+```
+```bash
 gpasswd -a username groupname 
+```
+
+### Remove user from Group
+```bash
+gpasswd -d username groupname
+```
+
+### Delete the Group
+```bash
+groupdel groupname
 ```
 
 

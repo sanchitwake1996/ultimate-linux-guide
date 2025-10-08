@@ -23,6 +23,10 @@ To create a user with a home directory:
 ```bash
 useradd -m username
 ```
+For non interactive we used 
+```bash
+echo "password" | passwd --stdin username
+```
 
 To specify a shell:
 ```bash
@@ -34,6 +38,8 @@ useradd -s /bin/bash username
 adduser username
 ```
 This is an interactive command that asks for a password and additional details.
+
+
 
 ## Managing User Passwords
 To set or change a user’s password:
